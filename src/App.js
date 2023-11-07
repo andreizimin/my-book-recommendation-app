@@ -1,5 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import Amplify from 'aws-amplify';
+import config from './amplify-config';
+import { API } from 'aws-amplify';
+import React, { useState, useEffect } from 'react';
+
+Amplify.configure(config);
+
+const fetchBooks = async () => {
+  try {
+    const bookData = await API.get('recommendedBooks', '/books');
+    console.log('Books fetched successfully:', bookData);
+    return bookData; // This should be an array of book items
+  } catch (error) {
+    console.error('Error fetching books:', error);
+    return []; // Return an empty array in case of an error
+  }
+};
+
+
+const BooksList = () => {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetchBooks();
+      setBooks(result);
+    };
+
+    fetchData();
+  }, []);
+}
 
 function App() {
   return (
