@@ -1,5 +1,6 @@
 import { API } from 'aws-amplify';
 import { useState, useEffect } from 'react';
+import Book from './Book';
 
 const fetchBooks = async () => {
     try {
@@ -26,7 +27,16 @@ const fetchBooks = async () => {
       fetchData();
     }, []);
   
-    // The rest of your component rendering logic will go here
+    return (
+      <div>
+        {books.length ? (
+          books.map(book => <Book key={book.id} book={book} />)
+        ) : (
+          <p>No books found.</p>
+        )}
+      </div>
+    );
+  
   };
 
   export default BooksList;
