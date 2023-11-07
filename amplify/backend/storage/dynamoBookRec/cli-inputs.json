@@ -1,0 +1,48 @@
+{
+  "resourceName": "dynamoBookRec",
+  "tableName": "bookRecommendations",
+  "partitionKey": {
+    "fieldName": "recommendationId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "episodeId",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "EpisodeIndex",
+      "partitionKey": {
+        "fieldName": "episodeId",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "recommendationTimestamp",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "BookIndex",
+      "partitionKey": {
+        "fieldName": "bookId",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "recommendationTimestamp",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "PodcastIndex",
+      "partitionKey": {
+        "fieldName": "podcastId",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "recommendationTimestamp",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

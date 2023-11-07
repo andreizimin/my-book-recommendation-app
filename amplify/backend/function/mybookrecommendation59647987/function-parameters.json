@@ -1,0 +1,17 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "dynamodbTableName",
+      "environmentVariableName": "DYNAMODB_TABLE_NAME"
+    },
+    {
+      "cloudFormationParameterName": "environment",
+      "environmentVariableName": "ENVIRONMENT"
+    },
+    {
+      "cloudFormationParameterName": "logLevel",
+      "environmentVariableName": "LOG_LEVEL"
+    }
+  ]
+}

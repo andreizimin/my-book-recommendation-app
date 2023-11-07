@@ -1,0 +1,95 @@
+{
+  "api": {
+    "recommendedBooks": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "mybookrecommendation59647987": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamoBookRec"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_mybookrecommendation59647987_awsRegion": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ]
+    },
+    "AMPLIFY_function_mybookrecommendation59647987_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ]
+    },
+    "AMPLIFY_function_mybookrecommendation59647987_dynamodbTableName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ]
+    },
+    "AMPLIFY_function_mybookrecommendation59647987_environment": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ]
+    },
+    "AMPLIFY_function_mybookrecommendation59647987_logLevel": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ]
+    },
+    "AMPLIFY_function_mybookrecommendation59647987_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dynamoBookRec": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

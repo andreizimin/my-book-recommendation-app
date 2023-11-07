@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mybookrecommendation-dev-220955-authRole",
+      "UnauthRoleArn": "arn:aws:iam::341430680873:role/amplify-mybookrecommendation-dev-220955-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::341430680873:role/amplify-mybookrecommendation-dev-220955-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-mybookrecommendation-dev-220955-deployment",
+      "UnauthRoleName": "amplify-mybookrecommendation-dev-220955-unauthRole",
+      "StackName": "amplify-mybookrecommendation-dev-220955",
+      "StackId": "arn:aws:cloudformation:us-west-2:341430680873:stack/amplify-mybookrecommendation-dev-220955/3b4ce940-7a07-11ee-a548-06fd67c01a6b",
+      "AmplifyAppId": "d3fu9mr3i0dgbe"
+    },
+    "categories": {
+      "function": {
+        "mybookrecommendation59647987": {
+          "awsRegion": "us-west-2",
+          "dynamodbTableName": "dynamoBookRec",
+          "environment": "dev",
+          "logLevel": "INFO",
+          "deploymentBucketName": "amplify-mybookrecommendation-dev-220955-deployment",
+          "s3Key": "amplify-builds/mybookrecommendation59647987-34385762614441434772-build.zip"
+        }
+      },
+      "storage": {
+        "dynamoBookRec": {}
+      }
+    }
+  }
+}
