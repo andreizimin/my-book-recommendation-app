@@ -5,16 +5,7 @@
       "name": "/books",
       "lambdaFunction": "mybookrecommendation59647987",
       "permissions": {
-        "setting": "protected",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ],
-        "guest": [
-          "read"
-        ]
+        "setting": "open"
       }
     }
   }

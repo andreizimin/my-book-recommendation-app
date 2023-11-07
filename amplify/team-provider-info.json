@@ -28,6 +28,10 @@
       },
       "auth": {
         "mybookrecommendation": {}
+      },
+      "api": {
+        "recommendedBooks": {},
+        "api4398cd0a": {}
       }
     }
   }
