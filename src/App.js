@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Amplify from 'aws-amplify';
-import config from './amplify-config';
+import {Amplify} from 'aws-amplify';
+import config from './aws-exports';
 import { API } from 'aws-amplify';
 import React, { useState, useEffect } from 'react';
 
