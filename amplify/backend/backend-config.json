@@ -1,5 +1,19 @@
 {
   "api": {
+    "api4398cd0a": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "mybookrecommendation59647987"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "recommendedBooks": {
       "dependsOn": [
         {

@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-mybookrecommendation-dev-220955-unauthRole",
       "StackName": "amplify-mybookrecommendation-dev-220955",
       "StackId": "arn:aws:cloudformation:us-west-2:341430680873:stack/amplify-mybookrecommendation-dev-220955/3b4ce940-7a07-11ee-a548-06fd67c01a6b",
-      "AmplifyAppId": "d3fu9mr3i0dgbe"
+      "AmplifyAppId": "d3fu9mr3i0dgbe",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-mybookrecommendation-dev-220955-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {

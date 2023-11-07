@@ -13,6 +13,9 @@
     },
     "recommendedBooks": {
       "Type": "String"
+    },
+    "api4398cd0a": {
+      "Type": "String"
     }
   },
   "Conditions": {

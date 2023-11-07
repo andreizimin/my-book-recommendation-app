@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "mybookrecommendation59647987",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
